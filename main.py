@@ -1,6 +1,6 @@
-import capsolver_py
+import capsolver_api
 
-capsolver = capsolver_py.HCaptchaTask('your_capsolver_api_key')
+capsolver = capsolver_api.HCaptchaTask('your_capsolver_api_key')
 
 print(capsolver.get_balance())
 
