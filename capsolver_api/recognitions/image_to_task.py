@@ -1,5 +1,5 @@
 from typing import Optional
-from ..capsolver_py import Capsolver
+from ..capsolver_api import Capsolver
 
 
 class ImageToTextTask(Capsolver):

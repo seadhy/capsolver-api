@@ -1,5 +1,5 @@
 from typing import Literal
-from ..capsolver_py import Capsolver
+from ..capsolver_api import Capsolver
 
 
 class CloudflareTurnstileTask(Capsolver):

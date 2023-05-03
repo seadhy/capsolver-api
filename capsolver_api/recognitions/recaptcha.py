@@ -1,4 +1,4 @@
-from ..capsolver_py import Capsolver
+from ..capsolver_api import Capsolver
 
 
 class ReCaptchaClassification(Capsolver):

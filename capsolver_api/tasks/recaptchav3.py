@@ -1,5 +1,5 @@
 from typing import Optional, Literal
-from ..capsolver_py import Capsolver
+from ..capsolver_api import Capsolver
 
 
 class ReCaptchaV3Task(Capsolver):
