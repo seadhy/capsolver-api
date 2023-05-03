@@ -38,7 +38,7 @@ captcha_key = capsolver.get_solution(task_id)
 print(captcha_key)
 ````
 
-### Hcaptcha
+### RecaptchaV2
 ````python
 from capsolver_api import ReCaptchaV2Task
 
