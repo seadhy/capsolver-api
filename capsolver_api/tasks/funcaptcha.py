@@ -12,7 +12,8 @@ class FunCaptchaTask(Capsolver):
                     website_key: str = None,
                     api_js_subdomain: Optional[str] = None,
                     data: Optional[str] = None,
-                    proxy: Optional[str] = None
+                    proxy: Optional[str] = None,
+                    useragent: Optional[str] = None
                     ):
 
         if all((task_type, website_url, website_key)):
@@ -21,13 +22,14 @@ class FunCaptchaTask(Capsolver):
               "task": {
                 "type": task_type,
                 "websiteURL": website_url,
-                "websiteKey": website_key,
+                "websitePublicKey": website_key,
               }
             }
 
             payload['task'].update({'funcaptchaApiJSSubdomain': api_js_subdomain} if api_js_subdomain else {})
             payload['task'].update({'data': data} if data else {})
             payload['task'].update({'proxy': proxy} if proxy else {})
+            payload['task'].update({'userAgent': useragent} if useragent else {})
 
             create_task_req = self.make_request('/createTask', payload)
             if create_task_req.status_code == 200:
