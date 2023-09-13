@@ -12,9 +12,9 @@ classifiers = [
 
 setup(
     name='capsolver_api',
-    version='1.0.6',
+    version='1.0.7',
     author='seadhy',
-    author_email='seadhy@protonmail.com',
+    author_email='contact@seadhy.com',
     description='capsolver.com library for Python',
     long_description=long_description,
     license="MIT",

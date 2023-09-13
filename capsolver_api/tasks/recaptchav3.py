@@ -25,7 +25,7 @@ class ReCaptchaV3Task(Capsolver):
               "task": {
                 "type": task_type,
                 "websiteURL": website_url,
-                "websiteKey": website_url,
+                "websiteKey": website_key,
                 "pageAction": page_action
               }
             }
